@@ -1,5 +1,6 @@
-package hello;
+package wendll.controllers;
 
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -7,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
     @RequestMapping("/")
+    @ResponseBody
     public String index() {
         return "Greetings from Spring Boot!";
     }
