@@ -19,13 +19,13 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'war'
+//apply plugin: 'war'
 apply plugin: 'spring-boot'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
-war {
+jar {
     baseName = 'learning-spring-boot'
     version  = '0.1.0'
 }
