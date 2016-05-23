@@ -11,6 +11,10 @@ Open the `application.properties` file and set your own configurations.
 - Java 7
 - Gradle 2.8
 
+#### JAR
+
+    $ ./gradlew build
+
 
 #### From terminal
 
@@ -18,6 +22,11 @@ Go on the project's root folder, then type:
 
     $ ./gradlew bootRun
 
+#### Run from production environment
+
+Run the projects with production configuration
+
+    $ java -jar build/libs/learning-spring-boot-0.1.0.jar --spring.config.location=deploy/application-prod.properties
 
 ### Usage
 
