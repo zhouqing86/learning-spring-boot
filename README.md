@@ -1,3 +1,16 @@
+Leaning Spring Boot
+--------------------
+
+## 介绍
+
+本项目使用到的：
+
+- Spring Boot
+- Flyway
+- MyBatis
+- Logback
+- MySQL
+
 ## Hot reloading
 
 注意在idea上
