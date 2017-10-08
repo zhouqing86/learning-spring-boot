@@ -7,4 +7,4 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
 
-INSERT users(userName, passWord, user_sex, nick_name) VALUES('wendll', 'mozhong', 'MAN', '魔种');
+INSERT INTO users(userName, passWord, user_sex, nick_name) VALUES('wendll', 'mozhong', 'MAN', '魔种');
