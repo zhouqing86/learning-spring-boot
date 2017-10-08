@@ -61,6 +61,7 @@ dependencies {
     // TestNG is also supported by the Gradle Test task. Just change the
     // testCompile dependency to testCompile 'org.testng:testng:6.8.1' and add
     // 'test.useTestNG()' to your build script.
+    compile("org.springframework.boot:spring-boot-devtools")
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
 
