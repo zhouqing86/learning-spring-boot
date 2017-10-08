@@ -1,10 +1,8 @@
 package wendll.controllers;
 
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import wendll.mapper.UserMapper;
 import wendll.model.User;
 
@@ -17,7 +15,8 @@ public class UserController {
     private UserMapper userMapper;
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
-    public List<User> getUsers() {
+    public List<User> getUsers(@RequestParam(required = false) Integer page, @RequestParam(required = false) Integer pageSize) {
+        PageHelper.startPage(page == null? 1 : page, pageSize == null ? 1 : pageSize);
         List<User> users=userMapper.getAll();
         return users;
     }
