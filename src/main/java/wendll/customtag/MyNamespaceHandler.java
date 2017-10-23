@@ -1,7 +1,11 @@
 package wendll.customtag;
 
-/**
- * Created by qzhou on 23/10/2017.
- */
-public class MyNamespaceHandler {
+import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
+
+public class MyNamespaceHandler extends NamespaceHandlerSupport{
+
+    @Override
+    public void init() {
+        registerBeanDefinitionParser("user", new UserBeanDefinitionParser());
+    }
 }
