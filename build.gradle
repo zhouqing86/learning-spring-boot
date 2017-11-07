@@ -41,8 +41,6 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
 
-    // tag::jetty[]
-    // tag::jetty[]
     compile("org.springframework.boot:spring-boot-starter-web") {
         exclude module: "spring-boot-starter-tomcat"
     }
@@ -52,10 +50,9 @@ dependencies {
     compile("org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1")
     compile("org.flywaydb:flyway-core:4.0.3")
     compile('org.slf4j:slf4j-api:1.7.12')
-    // end::jetty[]
-    // tag::actuator[]
+    compile("org.springframework.boot:spring-boot-starter-aop")
+    compile("com.alibaba:fastjson:1.2.28")
     compile("org.springframework.boot:spring-boot-starter-actuator")
-    // end::actuator[]
 
 //    compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("mysql:mysql-connector-java")
