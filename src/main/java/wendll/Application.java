@@ -15,8 +15,7 @@ public class Application {
 
     @Bean
     public EmbeddedServletContainerFactory servletContainer() {
-        JettyEmbeddedServletContainerFactory factory =
-                new JettyEmbeddedServletContainerFactory();
+        JettyEmbeddedServletContainerFactory factory = new JettyEmbeddedServletContainerFactory();
         return factory;
     }
 
